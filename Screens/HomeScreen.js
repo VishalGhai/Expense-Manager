@@ -5,6 +5,7 @@ import { Button, ScrollView, StyleSheet, Text, View } from 'react-native'
 import HomeScreenStats from '../Components/HomeScreenStats'
 import AddEntryComponent from '../Components/AddEntryComponent'
 import RecentTransactionsHomeView from '../Components/RecentTransactionsHomeView'
+import ScheduledTransactionsContainer from '../Components/ScheduledTransactionsContainer'
 
 const HomeScreen = ({ navigation, data }) => {
     return (
@@ -21,6 +22,9 @@ const HomeScreen = ({ navigation, data }) => {
             </View>
             <View style={styles.RecentTransactionsContainer}>
                 <RecentTransactionsHomeView />
+            </View>
+            <View style={styles.ScheduledTransactionsContainer}>
+                <ScheduledTransactionsContainer />
             </View>
         </ScrollView>
     )
@@ -47,7 +51,13 @@ const styles = StyleSheet.create({
         fontWeight: '700',
     },
     RecentTransactionsContainer: {
-        height: 280,
+        minHeight: 280,
         padding: 10
+    },
+    ScheduledTransactionsContainer: {
+        flex: 1,
+        height: 200,
+        borderColor: 'black',
+        borderWidth: 1
     }
 })

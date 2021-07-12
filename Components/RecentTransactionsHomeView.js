@@ -14,7 +14,7 @@ const RecentTransactionsHomeView = () => {
                 <TransactionItemView />
             </View>
             <TouchableOpacity style={{ textAlign: 'center' }}>
-                <Text style={{ textAlign: 'center', marginHorizontal: 135, backgroundColor: 'white', padding: 5, paddingLeft: -5, borderRadius: 20, borderWidth: 1, borderColor: 'grey' }} >SHOW MORE</Text>
+                <Text style={{ textAlign: 'center', marginHorizontal: 135, backgroundColor: 'white', padding: 5, borderRadius: 20, borderWidth: 1, borderColor: 'grey', fontSize: 12, fontWeight: '700' }} >SHOW MORE</Text>
             </TouchableOpacity>
         </View>
     )
